@@ -178,11 +178,17 @@ html{
     border-radius: 5px; 
 }
 
-.contacto .col .info ul cont-email {
-    text-decoration: none;
-    color: white;
+.cont-email {
+    color: #fffb00; 
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
+.cont-email:hover {
+    color: #00b31e;
+    text-decoration: underline;
+}
 
 /*-----------------------------------------*/
 
@@ -380,7 +386,7 @@ html{
 .curriculum{
     background-color: #1e2326;
     color: #fff;
-    padding: 90px 50px 20px;
+    padding: 90px 20px 20px;
 }
 .curriculum .contenido-seccion{
     max-width: 1100px;
@@ -485,7 +491,11 @@ html{
 }
 
 
-/* SECCION HABILIDADES EN SEGURIDAD */
+
+/*---------------------------------------
+EXPERIENCIA EN  SEGURIDAD Y VIDEOVIGILANCIA
+-----------------------------------------*/
+
 .seguridad{
     background-color: #15181a;
     color: #FCD514;
