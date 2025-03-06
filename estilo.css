@@ -181,6 +181,9 @@ html{
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas modificado */
+    justify-items: center; /* Centrar elementos */
+    justify-content: center;
 }
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
