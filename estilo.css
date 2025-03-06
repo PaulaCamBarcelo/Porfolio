@@ -178,6 +178,11 @@ html{
     border-radius: 5px; 
 }
 
+.cont-email {
+    text-decoration: none;
+    color: white;
+}
+
 /*-----------------------------------------*/
 
 .sobremi .fila .col .contenedor-intereses{
