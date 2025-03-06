@@ -182,6 +182,9 @@ html{
     text-decoration: none;
     color: white;
 }
+.contacto .col .info ul .cont-email:hover {
+    background-color: orange;
+}
 
 /*-----------------------------------------*/
 
