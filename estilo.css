@@ -113,9 +113,9 @@ html{
     line-height: 42px;
     margin: 30px 5px;
     font-size: 25px;
-    transition: .3s;
-    
+    transition: .3s;  
 }
+
 .inicio .contenido-banner .redes a:hover{
     background-color: black;
 }
@@ -134,8 +134,8 @@ html{
     text-align: center;
     padding: 20px 0;
     color: #FCD514;
-
 }
+
 .sobremi .contenido-seccion p{
     line-height: 20px;
     margin-bottom: 20px;
@@ -175,15 +175,18 @@ html{
 .sobremi .fila .col ul li span{
     padding: 3px;
     font-weight: bold;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
 }
+
+/*-----------------------------------------*/
+
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas modificado */
+    flex-wrap: wrap; 
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
     justify-items: center; /* Centrar elementos */
     justify-content: center;
+      
 }
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
@@ -196,41 +199,20 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
+    
+/*-----------------------------------------*/
 
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #FCD514; /*color de objetos intereses hover*/
+    background-color: #FCD514;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-.sobremi button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #fc7114;
-    z-index: -1;
-    transition: 1s;
-}
-.sobremi button:hover .overlay{
-    width: 100%;
-}
-/* SECCION S K I L L S */
+
+
+
+/* SECCION S K I L L S HABILIDADES */
 .skills{
     background-color: #252A2E;
     color: #fff;
@@ -245,7 +227,6 @@ html{
     font-family: monospace;
     text-align: center;
     padding: 20px 0;
-
 }
 .skills .fila{
     display: flex;
@@ -282,9 +263,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-   
     line-height: 40px;
-  
     top: -17px;
     right: -15px;
     font-size: 18px;
@@ -296,63 +275,61 @@ html{
     width: 0%;
     animation: 2s java forwards;
 }
+
 @keyframes java {
     0%{width: 0%;}
     100%{width: 50%;}
 }
-/*--------------------------------*/
 .skills .skill .diseño{
     width: 0%;
     animation: 2s diseño forwards;
 }
+
 @keyframes diseño {
     0%{width: 0%;}
     100%{width: 70%;}
 }
-/*--------------------------------*/
 .skills .skill .ofimatica{
     width: 0%;
     animation: 2s ofimatica forwards;
 }
+
 @keyframes ofimatica {
     0%{width: 0%;}
     100%{width: 80%;}
 }
-
 .skills .skill .redes{
     width: 0%;
     animation: 2s redes forwards;
 }
+
 @keyframes redes {
     0%{width: 0%;}
     100%{width:70%;}
 }
-
 .skills .skill .ws{
     width: 0%;
     animation: 2s ws forwards;
 }
+
 @keyframes ws {
     0%{width: 0%;}
     100%{width: 40%;}
 }
-
-/*------*/
 .skills .skill .so{
     width: 0%;
     animation: 2s so forwards;
 }
+
 @keyframes so {
     0%{width: 0%;}
     100%{width: 80%;}
 }
-
-/*-----------------------------------------*/
-
 .skills .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;
 }
+
 @keyframes comunicacion {
     0%{width: 0%;}
     100%{width: 80%;}
@@ -584,93 +561,6 @@ html{
     background-color: #e6b800;
 }
 
-
-/* SECCION CONTACTO
-.contacto{
-    background-image: url(img/technology-6873010_1280.jpg);
-    background-color: #1e2326;
-    color: #fff;
-    padding: 90px 50px 0;
-}
-.contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.contacto h2{
-    font-size: 30px;
-    font-family: monospace;
-    text-align: center;
-    padding: 20px 0;
-    color: #FCD514;
-}
-.contacto .fila{
-    display: flex;
-}
-.contacto .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
-}
-.contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
-    font-size: 25px;
-}
-.contacto button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #FCD514;
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
-    width: 100%;
-}
-.contacto .col img{
-    width: 100%;
-}
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width: 350px; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contacto .col .info ul{
-    list-style: none;
-}
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-}
-.contacto .col .info ul li i{
-    color: #FCD514;
-    display: inline-block;
-    margin-right: 20px;
-} */
-
 /* SECCIÓN CONTACTO (Optimizada) */
 .contacto {
     background-image: url(img/technology-6873010_1280.jpg);
@@ -700,7 +590,7 @@ html{
 
 .contacto .col {
     width: 48%; /* Ajuste para que no sea tan ancho */
-    padding: 5px;
+    padding: 30px 15px 20px;
     position: relative;
 }
 
@@ -833,9 +723,14 @@ footer .arriba{
     .sobremi .fila{
         display: block;
     }
-    .sobremi .fila .col{
+    /* .sobremi .fila .col{
         width: fit-content;
+    } */
+    .sobremi .fila .col {
+        width: 100%;  /* Ocupará todo el ancho disponible */
+        text-align: center;  /* Centra el contenido si es necesario */
     }
+    
 
     .skills .fila{
         display: block;
