@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://raw.githubusercontent.com/PaulaCamBarcelo/Porfolio/main/public/PB-Logo.png">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/PaulaCamBarcelo/Porfolio/main/public/PB-Logo.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>PB - Curriculum</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/barra.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">cv</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="index.htm#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="index.html#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a class="button_slide slide_right" id="outer" href="curriculum.html" 
+                        onclick="seleccionar()">CURRICULUM</a>
+                    </li> 
+                </ul>
+            </nav>
+            
+            <script>
+                window.addEventListener("scroll", function () {
+                    let header = document.querySelector(".contenedor-header");
+                    if (window.scrollY > 50) {
+                        header.classList.add("abajo"); // Agrega la clase cuando baja el scroll
+                    } else {
+                        header.classList.remove("abajo"); // Quita la clase cuando vuelve arriba
+                    }
+                });
+            </script>
+            
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- SECCION CURRICULUM SECCION 5-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Utec</h4>
+                        <span class="casa">Universidad Tecnológica del Uruguay</span>
+                        <span class="fecha">2018 - 2019</span>
+                        <p>Licenciatura en tecnologias de la Información.</p><br>
+                        <p>Estado: Pausado.</p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Instituto MAPA</h4>
+                        <span class="casa">Técnico en Redes</span>
+                        <span class="fecha">2022</span>
+                        <p>Curso de Técnico en Redes</p><br>
+                        <p>Estado: Culminado.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Capacitaciones</h4>
+                        <span class="casa">Utec</span>
+                        <span class="fecha"> Fundamentos de Cyber en Redes y Windows</span>
+                        <span class="fecha">2025</span>
+                        <p>Estado: Culminado.</p>
+                        
+                        <br>
+                        
+                        <span class="casa">Google Activity</span>
+                        <span class="fecha">Ciberseguridad en el Trabajo</span>
+                        <span class="fecha">2021</span>
+                        <p>Estado: Culminado.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Operador De Monitoreo</h4>
+                        <span class="casa">TATA S.A</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p>Monitoreo de instalaciones para prevenir riesgos relacionados con pérdidas y garantizar la seguridad.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar Vigilante</h4>
+                        <span class="casa">Grupo Gamma</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>vigilancia, control de accesos, patrullaje, monitoreo de cámaras de seguridad y respuesta ante emergencias.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Militar</h4>
+                        <span class="casa">F.A.U</span>
+                        <span class="fecha">2019 - 2020</span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+  
+    <!-- footer -->
+    <footer>
+        <a href="#curriculum" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+                <a href="https://www.linkedin.com/in/paula-barcel%C3%B3-16a1a810b/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            
+        </div>
+    
+     
+        <div class="row">
+
+            <div class="col-lg-3 col-12 mt-5">
+                <p class="copyright-text">Copyright © 2025</p><samp>Diseño Web - Paula Barcelo</samp>
+            </div>
+
+        </div>
+    </footer>  
+
+
+</body>
+</html>
