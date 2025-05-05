@@ -1,0 +1,160 @@
+/* CONTENEDOR GENERAL DE LA BARRA DE CARGA */
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0f0f1b;
+    font-family: sans-serif;
+}
+
+/* CONTENEDOR DE LA ANIMACIÓN */
+.loading-container {
+    text-align: center;
+}
+
+.loader:before {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 38, 63, 0.15);
+    animation-delay: 0.3s;
+}
+
+.loader:after {
+    width: 75%;
+    height: 75%;
+    background-color: rgba(3, 2, 10, 0.5);
+    top: 12.5%;
+    left: 12.5%;
+} 
+
+@keyframes pulsOut {
+    0%, 100% { transform: scale(0); }
+    50% { transform: scale(1); }
+}
+
+/* TEXTO "CARGANDO" */
+.loading-text {
+    color: #e0e0e0;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* BARRA DE PROGRESO */
+.progress-bar {
+    width: 200px;
+    height: 4px;
+    background: #000000;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress {
+    height: 100%;
+    background: rgb(122, 148, 189) ;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+/* ESTILO PARA EL HEADER CUANDO HAY SCROLL */
+.contenedor-header.abajo {
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+}
+
+
+/*************************************
+          BTN CURRICULUM NAV
+**************************************/
+
+#wrapper {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+
+  }
+.btn6{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: rgb(122, 148, 189) ;
+    display: block;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+  }
+  
+  .btn:hover::before {
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+
+  .btn6{
+    border:1px solid transparent; 
+     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  }
+  
+  .btn6::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: rgb(122, 148, 189) ;
+    box-shadow: inset 0px 0px 0px rgb(122, 148, 189) ;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  
+  .btn6:hover::before {
+    width:100%;
+  }
+  
+  .btn6::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: rgb(122, 148, 189) ;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  .btn6:hover::after {
+    width:100%;
+  }
+  .btn6:hover{
+    border-left:1px solid rgb(122, 148, 189) ;
+    border-right:1px solid rgb(122, 148, 189) ;
+  }

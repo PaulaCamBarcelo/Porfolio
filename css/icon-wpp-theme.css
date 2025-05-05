@@ -1,0 +1,88 @@
+
+/******************************
+ * CONTENEDOR DE BOTONES
+ ******************************/
+ .botones-flotantes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* espacio entre botones */
+    z-index: 999;
+}
+
+/******************************
+ * BOTÓN MODO OSCURO
+ ******************************/
+#modo-toggle-btn {
+    background-color: #ffffffcc; 
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modo-toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+#modo-toggle-btn i {
+    font-size: 20px;
+    color: #121212;
+    transition: transform 0.4s, color 0.4s;
+}
+
+body.modo-oscuro #modo-toggle-btn {
+    background-color: #fbfbfbcc;
+}
+
+body.modo-oscuro #modo-toggle-btn i {
+    color: #e79d0a;
+} 
+
+body.modo-claro #modo-toggle-btn {
+    background-color: #bdbdbdcc;
+}
+
+body.modo-claro #modo-toggle-btn i {
+    color: #0e047a;
+} 
+
+/******************************
+ * BOTÓN WHATSAPP
+ ******************************/
+.btn-wsp {
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-wsp:hover {
+    background: #20ba5a;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:768px){
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        font-size: 30px;
+    }
+}

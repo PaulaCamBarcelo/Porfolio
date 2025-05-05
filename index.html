@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://raw.githubusercontent.com/PaulaCamBarcelo/Porfolio/main/public/PB-Logo.png">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/PaulaCamBarcelo/Porfolio/main/public/PB-Logo.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Libreria de  -->
+    <script src="js/script.js"></script>
+    <title>Web - Paula Barcelo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/barra.css">
+    <link rel="stylesheet" href="css/icon-wpp-theme.css">
+    <link rel="stylesheet" href="css/tema-claro-oscuro.css">
+   
+</head>
+
+<body>
+
+   <!-- BARRA DE CARGA -->
+    <section class="barra">
+        <div class="loading-container">
+            <div class="loader"></div>
+            <p class="loading-text">Cargando</p>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTENIDO PRINCIPAL (OCULTO INICIALMENTE) -->
+    <div class="contenido" style="display: none;">
+            <!-- MENU ENCABEZADO -->
+            <div class="contenedor-header">
+                <header>
+                        <!-- ICON LOGO -->
+                        <div class="logo">
+                            <a href="#inicio">CV</a>
+                        </div>
+
+                        <!-- NAV -->
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                                <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>       
+                                <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>  
+                                <li><a class="btn6" id="wrapper" href="curriculum.html" 
+                                    onclick="seleccionar()">CURRICULUM</a>
+                                </li>                       
+                            </ul>
+                        </nav>
+
+                    
+                        <!-- MENU HAMBURGUESA -->
+                        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                                <i class="fa-solid fa-bars"></i>
+                        </div>
+                </header>
+            </div>
+
+            <!-- SECCIÓN INICIO -->
+            <section id="inicio" class="inicio">
+                
+                <div class="contenido-banner">
+                    
+                    <div class="contenido-banner">
+                        <div class="img-wrapper">
+                          <img src="img/Perfil-Paula_B.jpg" alt="Foto_perfil">
+                        </div>
+                    </div>
+                    <h1>Paula Barceló</h1>
+                    
+                    <div class="redes">
+                    <a href="https://www.linkedin.com/in/paula-barcel%C3%B3-16a1a810b/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                </div>
+
+                
+            </section>
+        
+            <!-- SECCION SOBRE MI SECCION 2-->
+            <section id="sobremi" class="sobremi" >
+                <div class="contenido-seccion">
+                    <h2>SOBRE MI</h2>
+                    
+                    <p><span class="fa-regular fa-face-smile">  Hola, soy Paula.</span><br><br>
+                    > Soy estudiante de Tecnologías de la Información con una gran pasión 
+                        por la seguridad, la inteligencia artificial y el diseño web. 
+                    </p><br>
+                    <p>
+                        > A continuacion descubriras mas sobre mis intereses, habilidades y experiencias.
+                    </p>
+
+                    <div class="fila">
+                        <!-- datos personales -->
+                        <div class="col">
+                            <h3>Datos Personales</h3>
+                            <ul>
+                                
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a class="cont-email" href="mailto:paulacamilabarcelomiranda@gmail.com?Subject=">
+                                    paulabarcelo@
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    +598 099 736 634
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Mtvdo/Durazno - Uruguay
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <!-- intereses -->
+                        <div class="col">
+                            <h3>Intereses</h3>
+                            <div class="contenedor-intereses">
+                                
+                                <div class="interes">
+                                    <i class="fa-solid fa-plane"></i>
+                                    <span>VIAJAR</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-person-hiking"></i>
+                                    <span>DEPORTE</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span>LIBROS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-car"></i>
+                                    <span>AUTOS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-camera"></i>
+                                    <span>FOTOS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-laptop-code"></i> 
+                                    <span>DISEÑO WEB</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-network-wired"></i>
+                                    <span>REDES</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-brands fa-microsoft"></i>
+                                    <span>WINDOWS</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION HABILIDADES Y COMPETENCIAS SECCION 3 -->
+            <section class="skills" id="skills">
+                <div class="contenido-seccion">
+                    <h2>HABILIDADES Y COMPETENCIAS</h2>
+                    <div class="fila">
+                    
+                        <!-- HABILIDADES TECNICAS -->
+                        <div class="col">
+                            <h3>Habilidades</h3>
+                            <div class="skill">
+                                <span>POO en Lenguaje Java</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Diseño Web - Html, Css y Wordpress</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <span>Ofimatica</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <span>Redes de comunicaciones</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>WindowsServer</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Sistemas Operativos</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- COMPETENCIAS PERSONALES -->
+                        <div class="col">
+                            <h3>Competencias</h3>
+                            <div class="skill">
+                                <span>Comunicación</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Trabajo en Equipo</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Atención a detalles</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Resolucion de problemas</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Autodidacta</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION HABILIDADES EN SEGURIDAD SECCION 4 -->
+            <section class="skills" id="skills">
+                <div class="contenido-seccion">
+                    <h2>SEGURIDAD</h2>
+                    <div class="fila">
+                    
+                        <!-- HABILIDADES TECNICAS -->
+                        <div class="col">
+                            <h3>Habilidades</h3>
+                            <div class="skill">
+                                <span>Sistemas VMS</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Videovigilancia</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>Vigilancia Fisica</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        
+                                    </div>
+                                </div>
+                            </div> 
+                    
+                        </div>     
+                        <!-- seg columna  -->
+                        <div class="col">               
+                            <h3></h3><br><br>
+                            <a href="seguridad.html" class="shadow-effect btn-link ">
+                                VER MÁS <i class=" fa-solid fa-plus"></i>
+                                <span class="overlay"></span>
+                            </a>
+                            <a href="curriculum.html" class="shadow-effect btn-link">
+                                VER MI CV 
+                                <span class="overlay"></span>
+                            </a>
+                        </div>  
+                    </div>
+
+                    <div>
+                        <a href="doc/CV Paula Barcelo Web.pdf" class="shadow-effect btn-link">
+                            DESCARGAR CV
+                            <span class="overlay"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>   
+
+            <!-- SECCION CONTACTO SECCION 5-->
+            <section id="contacto" class="contacto">
+                <div class="contenido-seccion">
+                    <h2>CONTÁCTO</h2>
+                    <div class="fila">
+                    
+                        <!-- Formulario -->     
+                        <div class="col">
+                            <form id="contact-form">
+                                <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required>
+                                <input type="email" name="email" id="email" placeholder="Dirección de correo" required>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required>
+                                </textarea>
+                                <button type="submit" class="btn-form">
+                                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                                    <span class="overlay"></span>
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                        <script>
+                            // Inicializar EmailJS con tu Public Key
+                            (function(){
+                                emailjs.init("BChMb2nyRdFNFtT3h"); 
+                            })();
+                        
+                            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                                event.preventDefault();
+                        
+                                // Deshabilita el botón mientras se envía el mensaje
+                                const submitButton = this.querySelector("button");
+                                submitButton.disabled = true;
+                        
+                                // Enviar el formulario con los valores correctos
+                                emailjs.sendForm("service_ukwvoz1", "template_o5f31cg", this) // 🔹 Aquí van tus IDs correctos
+                                    .then(function() {
+                                        alert("Mensaje enviado correctamente.");
+                                        document.getElementById("contact-form").reset(); // Limpia el formulario
+                                        submitButton.disabled = false; // Habilita el botón nuevamente
+                                    }, function(error) {
+                                        alert("Error al enviar el mensaje: " + error.text);
+                                        submitButton.disabled = false;
+                                    });
+                            });
+                        </script>
+                        
+                    <!-- Datos Contacto -->
+                        <div class="col">
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Mtvdo/Durazno - Uruguay
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                    +598 099 736 634
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a class="cont-email" href="mailto:paulacamilabarcelomiranda@gmail.com?Subject=">
+                                        paulabarcelo@
+                                        </a>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <a href="#inicio" class="arriba">
+                    <i class="fa-solid fa-angles-up"></i>
+                </a>
+                
+                <div class="redes">
+                        <a href="https://www.linkedin.com/in/paula-barcel%C3%B3-16a1a810b/">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>           
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2025</p><samp>Diseño Web - Paula Barcelo</samp>
+                    </div>
+                </div>
+
+            </footer>
+        
+            <!-- BOTONES FLOTANTES TEMA WHAT -->
+            <div class="botones-flotantes">
+                <!-- ICON FLOTANTE MODO CLARO/OSCURO -->
+                <button id="modo-toggle-btn" aria-label="Cambiar modo">
+                    <i id="modo-icono" class="fas fa-moon"></i>
+                </button>
+            
+                <!-- ICON WHATSAPP -->
+                <a href="https://wa.me/+598099736634?text=Estoy%20interesado%20en%20tu%20servicio%20de%20desarrollo-web" 
+                class="btn-wsp" target="_blank" aria-label="Chat por WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://raw.githubusercontent.com/PaulaCamBarcelo/Porfolio/main/public/PB-Logo.png">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/PaulaCamBarcelo/Porfolio/main/public/PB-Logo.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Libreria de  -->
+    <script src="js/script.js"></script>
+    <title>Seguridad - Paula Barcelo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/barra.css">
+    <link rel="stylesheet" href="css/icon-wpp-theme.css">
+    <link rel="stylesheet" href="css/tema-claro-oscuro.css">
+   
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">cv</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="index.html#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="index.html#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li>
+                        <a class="button_slide slide_right" id="outer" href="curriculum.html" 
+                        onclick="seleccionar()">CURRICULUM</a>
+                    </li> 
+                </ul>
+            </nav>
+            
+            <script>
+                window.addEventListener("scroll", function () {
+                    let header = document.querySelector(".contenedor-header");
+                    if (window.scrollY > 50) {
+                        header.classList.add("abajo"); // Agrega la clase cuando baja el scroll
+                    } else {
+                        header.classList.remove("abajo"); // Quita la clase cuando vuelve arriba
+                    }
+                });
+            </script>
+            
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>En Seguridad</h2>
+            <p><span>Hola, aqui estoy de nuevo.</span><br>
+                </p>
+                    Dejame contacrte más sobre mis experiencias en Seguriidad.
+                <p><br>
+                    
+                    He trabajado en roles de seguridad y monitoreo en empresas como TaTa S.A. y
+                    Grupo Gamma, además de formar parte de la Fuerza Aérea Uruguaya. 
+                    Esto me ha permitido desarrollar un fuerte sentido de 
+                     trabajo en equipo y análisis de riesgos.
+    
+                </p>   
+                <div>
+                    <h2>Actividades desempeñadas </h2>
+                    
+                        <ul>
+                            <li>
+                                Monitorear las instalaciones para prevenir riesgos relacionados con pérdidas y garantizar la seguridad.
+                            </li>
+                            <li>
+                                Realizar el seguimiento constante de locales, implementando vigilancia remota en tiempo real.
+                            </li>
+                            <li>
+                                  Realizar controles analíticos para evaluar posibles incidencias.
+                            </li>
+                            <li>
+                             Procesar y analizar datos para la toma de decisiones.
+                            </li>
+                            <li>
+                                    Registrar y documentar eventos relevantes.
+                            </li>
+                            <li>
+                                 Reportar y gestionar alarmas de forma efectiva.
+                            </li>
+                            <li>
+                                 Atender y resolver incidentes relacionados con alarmas y analíticas de seguridad.
+                            </li>
+                            <li>
+                                Realizacion de inspecciones periódicas en las instalaciones para garantizar la seguridad del área.
+                           </li>
+                        </ul>                                   
+                    <h3>
+                        📩 ¿Quieres saber más? <br>
+                        ¡Estoy abierta a oportunidades y colaboraciones! 
+                    </h3>
+                </div>
+
+          <!-- Sección Habilidades Seguridad -->
+                <div class="contenido-seccion">
+                    <h2>HABILIDADES</h2>
+
+                    <div class="fila">
+                        <div class="col">
+                            <div class="contenedor-intereses">
+                                
+                                <div class="interes">
+                                    <i class="fa-solid fa-laptop-code"></i> 
+                                    <span>IVMS</span>
+                                    <div class="tooltip">Implementacion y configuracion de Software de video vigilancia.</div>
+                                </div>
+
+                                <div class="interes">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                    <span>ANALÍTICAS</span>
+                                    <div class="tooltip">Análisis de datos de seguridad y monitoreo.</div>
+                                </div>
+
+                                <div class="interes">
+                                    <i class="fa-solid fa-person-through-window"></i>
+                                    <span>EVENTOS</span>
+                                    <div class="tooltip">Gestión de eventos de seguridad en tiempo real.</div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- seg columna  -->
+            <div class="col">               
+                <h3></h3><br><br>
+                <a href="curriculum.html" class="shadow-effect btn-link">
+                    VER MI CV 
+                    <span class="overlay"></span>
+                </a>
+            </div>  
+
+        </div>
+    </section>
+                
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTÁCTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- datos -->
+                <div class="col">
+                  
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mtvdo/Durazno - Uruguay
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                               +598 099 736 634
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a class="cont-email" href="mailto:paulacamilabarcelomiranda@gmail.com?Subject=">
+                                paulabarcelo@
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- footer -->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        
+        <div class="redes">
+                <a href="https://www.linkedin.com/in/paula-barcel%C3%B3-16a1a810b/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>           
+        </div>
+          
+        <div class="row">
+            <div class="col-lg-3 col-12 mt-5">
+                <p class="copyright-text">Copyright © 2025</p><samp>Diseño Web - Paula Barcelo</samp>
+            </div>
+        </div>
+
+    </footer>   
+    
+    <div class="botones-flotantes">
+        <!-- ICON FLOTANTE MODO CLARO/OSCURO -->
+        <button id="modo-toggle-btn" aria-label="Cambiar modo">
+            <i id="modo-icono" class="fas fa-moon"></i>
+        </button>
+    
+        <!-- ICON WHATSAPP -->
+        <a href="https://wa.me/+598099736634?text=Estoy%20interesado%20en%20tu%20servicio%20de%20desarrollo-web" 
+        class="btn-wsp" target="_blank" aria-label="Chat por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+ 
+</body>
+</html>

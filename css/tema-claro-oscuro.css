@@ -1,0 +1,153 @@
+/* ==== ESTILOS GENERALES ==== */
+:root {
+    /* Colores claros */
+    --bg-claro: #d2d2d2;
+    --text-claro: #121212;
+    --interes-claro: #ededed;
+    --footer-bg-claro: #d2d2d2;
+    --arriba-claro:#121212;
+
+    /* Colores oscuros */
+    --bg-oscuro: #121212;
+    --text-oscuro: #f5f5f5;
+    --interes-oscuro: #ffffff;
+    --footer-bg-oscuro: #121212;
+    --arriba-oscuro: rgb(228, 229, 231);
+}
+
+/* ==== TOGGLE CONTAINER ==== */
+#toggle-cont {
+    position: relative;
+    width: 70px;
+    height: 33px; 
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* ÁREA CLICKEABLE */
+#label-toggle {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ==== TOGGLE THUMB ==== */
+.toggle-thumb {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease, background-color 0.3s;
+}
+
+/* Ícono dentro del thumb */
+.toggle-thumb i {
+    font-size: 20px;
+    transition: transform 0.5s, color 0.5s;
+}
+
+/* ==== MOVIMIENTO AL ACTIVAR ==== */
+#toggle:checked + #label-toggle .toggle-thumb {
+    transform: translateX(36px); /* 70px - 30px - 4px de margen */
+    animation: bounce 0.4s ease;
+}
+
+/* ==== ANIMACIÓN GENERAL ==== */
+#toggle:not(:checked) + #label-toggle .toggle-thumb {
+    animation: bounce 0.4s ease;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1) translateX(0); }
+    50%  { transform: scale(1.1) translateX(4px); }
+    100% { transform: scale(1) translateX(0); }
+}
+
+
+/* luego en los modos */
+
+body.modo-claro {
+    background-color: var(--bg-claro);
+    color: var(--text-claro);
+}
+
+body.modo-claro #sobremi,
+body.modo-claro #skills,
+body.modo-claro .footer {
+    background-color: var(--bg-claro);
+    color: var(--text-claro);
+}
+
+body.modo-claro .interes {
+    color: var(--interes-claro);
+}
+
+body.modo-claro .arriba {
+    color: var(--arriba-claro);
+}
+
+body.modo-claro .redes a {
+    color: rgb(122, 148, 189);
+    background-color: rgb(0, 0, 0);
+}
+body.modo-claro 
+ .redes a:hover{
+    background-color: rgb(122, 148, 189);
+    color: rgb(0, 0, 0);
+}
+
+body.modo-claro .btn-link {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0) ;
+    color: #000000;
+}
+
+body.modo-claro .btn-link:hover {
+    cursor: pointer;
+    background-color: black;
+    color: rgb(122, 148, 189);
+}
+
+body.modo-claro .curriculum {
+    background-color: #d2d2d2;
+}
+body.modo-claro .curriculum .fila .item {
+    background-color: #ffffff;
+}
+body.modo-claro .curriculum  {
+    color: #000000;
+}
+
+/********************
+MODO OSCURO
+********************/
+body.modo-oscuro {
+    background-color: var(--bg-oscuro);
+    color: var(--text-oscuro);
+}
+
+body.modo-oscuro #sobremi,
+body.modo-oscuro #skills,
+body.modo-oscuro .footer {
+    background-color: var(--bg-oscuro);
+    color: var(--text-oscuro);
+}
+
+body.modo-oscuro .interes {
+    color: var(--interes-oscuro);
+}
+
+body.modo-oscuro .arriba {
+    color: var(--arriba-oscuro);
+}
+
