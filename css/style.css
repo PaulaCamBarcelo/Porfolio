@@ -134,15 +134,18 @@ main, footer, .site-header { position: relative; z-index: 2; }
    ========================================================================== */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--header-h);
-  transition: background 0.4s, backdrop-filter 0.4s, border-color 0.4s;
+  transition: border-color 0.4s;
   border-bottom: 1px solid transparent;
 }
-.site-header.scrolled {
+.site-header::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0;
   background: rgba(4, 5, 5, 0.72);
   backdrop-filter: blur(14px) saturate(140%);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
-  border-bottom-color: var(--line);
+  transition: opacity 0.4s;
 }
+.site-header.scrolled { border-bottom-color: var(--line); }
+.site-header.scrolled::before { opacity: 1; }
 .header-in { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .logo {
   font-family: var(--f-mono); font-weight: 700; font-size: 20px; letter-spacing: -0.02em;
@@ -517,6 +520,7 @@ html:not(.gsap).js .is-in .bar i, html:not(.gsap).js .bar.is-in i { width: var(-
 .form-status.ok { color: var(--neon); }
 .form-status.err { color: var(--danger); }
 .info-list { display: grid; gap: 12px; }
+@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
 
 /* ==========================================================================
    FOOTER
